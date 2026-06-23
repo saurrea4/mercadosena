@@ -36,7 +36,7 @@
                        name="descripcion"
                        class="form-control"
                        placeholder="Ingrese descripción"
-                       value="{{ old('descripcion') }}">
+                       value="{{ old('descripcion', $datos->descripcion) }}">
 
                 @error('descripcion')
                     <div class="error compacto col-lg-5">{{ $message }}</div>
